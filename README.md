@@ -38,8 +38,9 @@
 
 ---
 
-## 📥 Installation & Running the Project
+## 📥 Installation & Running The Project
 
+```bash
 # Clone the repository
 git clone https://github.com/hendrypk/bayaran.git
 
@@ -55,12 +56,12 @@ cp .env.example .env
 # Generate application key
 php artisan key:generate
 
-# Configure your .env file according to your database settings
+# Configure your .env file according your database setting
 # DB_DATABASE=bayaran
 # DB_USERNAME=root
 # DB_PASSWORD=
 
-# Run migrations and seeders
+# Run migration & seeder
 php artisan migrate --seed
 
 # Start the local development server
