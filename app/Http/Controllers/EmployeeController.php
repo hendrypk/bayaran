@@ -26,7 +26,10 @@ class EmployeeController extends Controller
 {
     //Employee List
     function employeelist(){
-        $employee = Employee::whereNull('resignation')->get();
+        // $employee = Employee::whereNull('resignation')->get();
+
+        $employee = Employee::all(); // Ambil semua data karyawan
+        // dd($employee);
         return view('employee.index', compact('employee'));
     }
     public function customColumns(Request $request)

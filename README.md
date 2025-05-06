@@ -56,8 +56,9 @@ php artisan key:generate
 # DB_USERNAME=root
 # DB_PASSWORD=
 
-# Jalankan migrasi dan seeder (jika ada)
+# Jalankan migrasi dan seeder
 php artisan migrate --seed
+php artisan db:seed --clas=PermissionsDemoSeeder
 
 # Jalankan server lokal
 php artisan serve
