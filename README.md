@@ -1,64 +1,67 @@
 # Bayaran - HRIS Software
 
-**Bayaran** adalah aplikasi Human Resource Information System (HRIS) berbasis web yang dibangun menggunakan framework **Laravel**. Aplikasi ini dirancang untuk membantu perusahaan dalam mengelola data karyawan, kehadiran, penggajian, KPI, dan berbagai fitur lainnya yang berkaitan dengan HR secara efisien.
+**Bayaran** is a web-based Human Resource Information System (HRIS) application built with the Laravel framework. It is designed to help companies efficiently manage employee data, attendance, payroll, KPIs, and various other HR-related features.
 
-## 🌐 Demo Aplikasi
+## 🌐 Application Demo
 
 🔗 [https://bayaran.hendrypk.my.id](https://bayaran.hendrypk.my.id)
 
-**Akun Demo:**
+**Admin Demo Account:**
 - **Username:** `administrator`
 - **Password:** `administrator`
 
 ---
 
-## 🚀 Fitur Utama
-
-- Manajemen Data Karyawan
-- Jadwal Kerja & Kehadiran
-- Penghitungan Gaji Bulanan
-- Pengelolaan KPI (Key Performance Indicator)
-- Penilaian Performance Appraisal
-- Lembur & Cuti
-- Sistem Login & Role-Based Access
+**Employee Demo Account:**
+- **Username:** `hendry5`
+- **Password:** `hendry5`
 
 ---
 
-## 🛠️ Teknologi
+## 🚀 Fitur Utama
+- Employee Data Management
+- Work Schedule & Attendance
+- Monthly Payroll Calculation
+- KPI (Key Performance Indicator) Management
+- Performance Appraisal
+- Overtime & Leave Management
+- Login System & Role-Based Access Control
+
+---
+
+## 🛠️ Technologies Used
 
 - **Framework:** Laravel
 - **Database:** MySQL
 - **Frontend:** Blade, Bootstrap
-- **Lainnya:** jQuery, AJAX, DataTables
+- **Others:** jQuery, AJAX, DataTables
 
 ---
 
-## 📥 Cara Install & Jalankan
+## 📥 Installation & Running the Project
 
-```bash
-# Clone repository
+# Clone the repository
 git clone https://github.com/hendrypk/bayaran.git
 
-# Masuk ke direktori project
+# Navigate into the project directory
 cd bayaran
 
-# Install dependensi PHP
+# Install PHP dependencies
 composer install
 
-# Copy file .env
+# Copy the .env file
 cp .env.example .env
 
 # Generate application key
 php artisan key:generate
 
-# Konfigurasi file .env sesuai database kamu
+# Configure your .env file according to your database settings
 # DB_DATABASE=bayaran
 # DB_USERNAME=root
 # DB_PASSWORD=
 
-# Jalankan migrasi dan seeder
+# Run migrations and seeders
 php artisan migrate --seed
-php artisan db:seed --clas=PermissionsDemoSeeder
 
-# Jalankan server lokal
+# Start the local development server
 php artisan serve
