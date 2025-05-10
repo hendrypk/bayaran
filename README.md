@@ -43,26 +43,35 @@
 ```bash
 # Clone the repository
 git clone https://github.com/hendrypk/bayaran.git
+```
 
 # Navigate into the project directory
+```bash
 cd bayaran
-
+```
 # Install PHP dependencies
+```bash
 composer install
+```
 
 # Copy the .env file
+```bash
 cp .env.example .env
-
+```
 # Generate application key
+```bash
 php artisan key:generate
-
+```
 # Configure your .env file according your database setting
 # DB_DATABASE=bayaran
 # DB_USERNAME=root
 # DB_PASSWORD=
 
 # Run migration & seeder
+```bash
 php artisan migrate --seed
-
+```
 # Start the local development server
+```bash
 php artisan serve
+```
