@@ -63,9 +63,11 @@ cp .env.example .env
 php artisan key:generate
 ```
 # Configure your .env file according your database setting
-# DB_DATABASE=bayaran
-# DB_USERNAME=root
-# DB_PASSWORD=
+```bash
+DB_DATABASE=bayaran
+DB_USERNAME=root
+DB_PASSWORD=
+```
 
 # Run migration & seeder
 ```bash
